@@ -9,7 +9,7 @@ function writeURL() {
 
     //begin function to generate url
     urlText.value = url;
-    function generateUrl() {
+    function generateURL() {
         var oldLink = prompt("Enter the URL from Boise State.");
         console.log("oldLink");
     };
