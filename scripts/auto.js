@@ -10,8 +10,33 @@ function writeURL() {
     //begin function to generate url
     urlText.value = url;
     function generateURL() {
+        //Get the URL
         var oldLink = prompt("Enter the URL from Boise State.");
         console.log("oldLink");
+
+        //Get the API
+        var apiId = prompt("Enter API ID");
+        console.log("apiId");
+
+        //Slice off the www.boisestatepublicradio
+
+
+        //Replace that with npr.org
+
+
+        //Remove slug -- ie environment, new, etc
+
+
+        //Add slashes instead of dashes in the date
+
+
+        //Concatenate it
+
+
+        //Write in the box!
+
+
+
     };
 
 
