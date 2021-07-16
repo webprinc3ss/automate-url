@@ -26,7 +26,7 @@ function writeURL() {
         console.log('nprLink', nprLink);
 
         //Remove slug -- ie environment, new, etc
-        var noSlugLink = nprLink.replace(/boisestatepublicradio.org\/(\w+)/, "npr.org");
+        var noSlugLink = nprLink.replace(/npr.org\/(\w+)/, "npr.org");
         console.log("noSlugLink", noSlugLink)
 
         // ^ org/\/(\w)/\/$
