@@ -21,17 +21,13 @@ function writeURL() {
         console.log("apiId", apiId);
 
         //Replace www.boisestatepublicradio with npr
-
         var nprLink = oldLink;
         nprLink = nprLink.replace('www.boisestatepublicradio', 'npr');
         console.log('nprLink', nprLink);
 
-
-
-
-
         //Remove slug -- ie environment, new, etc
-
+        var noSlugLink = nprLink.replace();
+        //https://stackoverflow.com/questions/48555156/replacing-separate-parts-of-an-url-with-javascript
 
         //Add slashes instead of dashes in the date
 
