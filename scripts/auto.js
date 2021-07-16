@@ -26,8 +26,13 @@ function writeURL() {
         console.log('nprLink', nprLink);
 
         //Remove slug -- ie environment, new, etc
-        var noSlugLink = nprLink.replace();
+        var noSlugLink = nprLink.replace(/boisestatepublicradio.org\/(\w+)/, "npr.org");
+        console.log("noSlugLink", noSlugLink)
+
+        // ^ org/\/(\w)/\/$
+
         //https://stackoverflow.com/questions/48555156/replacing-separate-parts-of-an-url-with-javascript
+        // https://stackoverflow.com/questions/14262770/javascript-replace-dash-hyphen-with-a-space/14262891
 
         //Add slashes instead of dashes in the date
 
