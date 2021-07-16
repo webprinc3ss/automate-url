@@ -35,10 +35,13 @@ function writeURL() {
         //Add slashes instead of dashes in the date
         // https://regexr.com/
         //used 'negative lookahead' to avoid replacing numbers: (?!abc)	negative lookahead
-        var noSlugLink = noSlugLink.replace(/(?!0-9)\-/g, "/");
-        console.log("noSlugLink", noSlugLink)
+        var noDash = noSlugLink.replace(/(?!0-9)\-/g, "/");
+        console.log("noDash", noDash)
 
-        //Concatenate it
+
+        //Add API!
+        var newLink = noDash.replace(/(?=a-z){1}/, "/" + apiId);
+        console.log("newLink", newLink)
 
 
         //Write in the box!
