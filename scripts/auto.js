@@ -11,17 +11,23 @@ function writeURL() {
     urlText.value = url;
     function generateURL() {
         //Get the URL
+        //https://www.boisestatepublicradio.org/environment/2021-07-15/all-hands-on-deck-national-fire-preparedness-level-reaches-highest-most-critical-tier
         var oldLink = prompt("Enter the URL from Boise State.");
-        console.log("oldLink");
+        console.log("oldLink", oldLink);
 
         //Get the API
+        //1016623768
         var apiId = prompt("Enter API ID");
-        console.log("apiId");
+        console.log("apiId", apiId);
 
-        //Slice off the www.boisestatepublicradio
+        //Replace www.boisestatepublicradio with npr
+
+        var nprLink = oldLink;
+        nprLink = nprLink.replace('www.boisestatepublicradio', 'npr');
+        console.log('nprLink', nprLink);
 
 
-        //Replace that with npr.org
+
 
 
         //Remove slug -- ie environment, new, etc
