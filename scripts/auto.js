@@ -43,7 +43,7 @@ function writeURL() {
 
         // console.log("apiId", apiId);
         //Add API!
-        var newLink = noDash.replace(/(?=a-z){1}/, apiId);
+        var newLink = noDash2.replace(/(?=\/a-z)/, apiId);
         console.log("newLink", newLink)
 
 
