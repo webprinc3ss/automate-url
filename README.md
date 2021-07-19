@@ -11,5 +11,7 @@ The purpose of this script is to transform a URL into a type of string that our 
 
 4.  Function will be converted to ES6 (as a comparison exercise).
 
+5. Clean-up. Remove comments and make code prettier.
+
 ## Credit
 JavaScript by webprinc3ss (me).
