@@ -43,13 +43,13 @@ function writeURL() {
 
         // console.log("apiId", apiId);
         //Add API!
-        var newLink = noDash2.replace(/(?=\/a-z)/, apiId);
+        var newLink = noDash2.replace(/(?<=\d+\/\d+\/\d+\/)/, apiId + "/");
         console.log("newLink", newLink)
 
 
         //Write in the box!
-
-
+        //https://www.boisestatepublicradio.org/environment/2021-07-15/all-hands-on-deck-national-fire-preparedness-level-reaches-highest-most-critical-tier
+        //1016623768
 
     };
 
