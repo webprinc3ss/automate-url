@@ -43,6 +43,7 @@ function writeURL() {
 
         // console.log("apiId", apiId);
         //Add API!
+        //With positive lookbehind: Matches a group before the main expression without including it in the result.
         var newLink = noDash2.replace(/(?<=\d+\/\d+\/\d+\/)/, apiId + "/");
         console.log("newLink", newLink)
         //Write in the box!
