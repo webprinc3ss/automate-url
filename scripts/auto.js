@@ -48,11 +48,8 @@ function writeURL() {
         //Write in the box!
         //https://www.boisestatepublicradio.org/environment/2021-07-15/all-hands-on-deck-national-fire-preparedness-level-reaches-highest-most-critical-tier
         //1016623768
-        return newLink;
+        return newLink; // result must be returned to pass as result of function to #url
     };
-
-
-
 };
 
 generateBtn.addEventListener("click", writeURL);
