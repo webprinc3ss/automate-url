@@ -3,7 +3,6 @@ const generateBtn = document.querySelector("#generate");
 
 //write url to document
 const writeURL = () => {
-
     let url = generateURL();
     const urlText = document.querySelector("#url");
 
@@ -13,11 +12,11 @@ const writeURL = () => {
 
 const generateURL = () => {
     //Get the URL
-    const oldLink = prompt("Enter the URL from Boise State.");
+    const oldLink = prompt("Enter the URL from Boise State.", "https://www.boisestatepublicradio.org/environment/2021-07-15/all-hands-on-deck-national-fire-preparedness-level-reaches-highest-most-critical-tier");
     console.log("oldLink", oldLink);
 
     //Get the API
-    const apiId = prompt("Enter API ID from slack");
+    const apiId = prompt("Enter API ID from slack", "1016623768");
     console.log("apiId", apiId);
 
     //Replace www.boisestatepublicradio with npr
@@ -44,9 +43,7 @@ const generateURL = () => {
     const newLink = noDash2.replace(/(?<=\d+\/\d+\/\d+\/)/, apiId + "/");
     console.log("newLink", newLink)
     //Write in the box!
-    //https://www.boisestatepublicradio.org/environment/2021-07-15/all-hands-on-deck-national-fire-preparedness-level-reaches-highest-most-critical-tier
-    //1016623768
-    // return newLink; //Removed for es6 as is 'implicit'
+    return newLink;
     // result must be returned to pass as result of function to #url
 };
 
